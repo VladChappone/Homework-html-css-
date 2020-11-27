@@ -1,2 +1,2 @@
-# Homework-html-css-
+# Homework-html-css
 Road to Front-end
