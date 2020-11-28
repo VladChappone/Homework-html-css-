@@ -1,0 +1,107 @@
+body {
+  /* не уверен что body вообще нужно... */
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 1400px;
+}
+
+.title {
+  margin-top: 108px;
+  margin-bottom: 30px;
+}
+
+.title-name {
+  color: #212121;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 43px;
+  text-align: center;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.border {
+  border-bottom: #ff8b38 solid 2px;
+  margin: auto;
+  width: 64px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  margin: 32px 521px 80px 520px;
+}
+.subtitle-text {
+  text-align: center;
+  min-width: 359px;
+  color: #86878b;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 80px 143px 83px;
+}
+
+.column-left {
+  width: 350px;
+  margin-right: 16px;
+}
+
+.column-middle {
+  width: 350px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.column-right {
+  width: 350px;
+  margin-left: 16px;
+}
+.circle-border {
+  margin: 0 140px 29px 140px;
+  width: 70px;
+  border-radius: 70px;
+  border: #ff8b38 solid 2px;
+}
+
+.img-column-left {
+  margin: 21px 25px 21px 25px;
+}
+
+.img-column-middle {
+  margin: 24px 18px 25px 17px;
+}
+
+.img-column-right {
+  margin: 19px 27px 20px 26px;
+}
+
+.container-subtitle {
+  padding-bottom: 29px;
+  width: 350px;
+  color: #333333;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+}
+
+.container-text {
+  width: 350px;
+  color: #86878b;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
