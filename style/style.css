@@ -1,22 +1,18 @@
 .awesome {
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
   margin: auto;
-  width: 1400px;
+  max-width: 1400px;
 }
 
 .container-pricing {
-  height: 883px;
-  width: 1400px;
+  max-width: 1400px;
   margin: auto;
 }
 
 .container-feedback {
-  height: 653px;
 }
 
 .general-title {
@@ -30,26 +26,21 @@
   line-height: 43px;
   text-align: center;
   letter-spacing: normal;
-  line-height: normal;
 }
 
 .general-title::after {
   display: block;
   content: '';
   border-bottom: #ff8b38 solid 2px;
-  margin: 30px 668px 0 668px;
-
+  margin: 30px auto;
   width: 64px;
 }
-/* .general-line {
-  border-bottom: #ff8b38 solid 2px;
-  margin: auto;
-  width: 64px;
-} */
 
 .general-subtitle {
-  margin: 32px 521px 80px 520px;
+  margin: 32px auto;
+  margin-bottom: 80px;
 }
+
 .general-subtitle-text {
   text-align: center;
   min-width: 359px;
@@ -62,7 +53,8 @@
 .awesome-cards {
   display: flex;
   justify-content: center;
-  margin: 0 80px 143px 83px;
+  margin: 0 auto;
+  margin-bottom: 143px;
 }
 
 .awesome-item {
@@ -118,7 +110,6 @@
   background-image: url('/img/backgr.png');
   background-color: rgb(0, 0, 0);
   background-size: cover;
-  height: 320px;
 }
 
 .stylish__header {
@@ -136,22 +127,18 @@
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .stylish__title::after {
   display: block;
   content: '';
   border-bottom: 2px solid white;
-  margin: 30px 668px 0 668px;
+  margin: 30px auto;
 
   width: 74px;
 }
 
 .stylish__subtitle {
-  margin-top: 23px;
   opacity: 0.5;
   color: #ffffff;
   font-family: 'Raleway';
@@ -161,21 +148,19 @@
   letter-spacing: normal;
   line-height: normal;
   text-align: center;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .stylish__btn {
   text-align: center;
   margin-top: 33px;
   height: 42px;
+  padding-bottom: 63px;
 }
 
 .stylish-btn__download {
   border: 2px solid white;
   width: 135px;
-  height: 42px;
+  line-height: 42px;
   background: none;
   color: #ffffff;
   font-size: 15px;
@@ -190,7 +175,7 @@
   border-radius: 25px;
   border: 3px solid #ff8b38;
   width: 150px;
-  height: 50px;
+  line-height: 50px;
   transform: rotate(360deg);
   cursor: pointer;
 }
@@ -199,22 +184,18 @@
   border-top: grey solid thin;
   width: 100%;
   background-color: rgb(0, 0, 0);
-  height: 100px;
 }
 
 .socials {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 38px;
-  padding-left: 541px;
+  margin: 30px auto 0;
   width: 317px;
-  height: 23px;
 }
 
 .socials__element {
   width: 28px;
-  height: 28px;
 }
 
 .footer-text {
@@ -222,20 +203,15 @@
   padding-top: 15px;
   padding-bottom: 15px;
   width: 124px;
-  height: 9px;
   opacity: 0.5;
   color: #ffffff;
   font-family: 'Open Sans' sans-serif;
-
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .pricing {
@@ -247,16 +223,14 @@
 .pricing-cards {
   display: flex;
   justify-content: center;
-  width: 1109px;
+  max-width: 1400px;
   margin: auto;
-  position: relative;
+  padding-bottom: 96px;
 }
 
 .pricing-cards__item {
   width: 343px;
-  margin-top: 39px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 39px 20px 0;
 }
 
 .pricing-cards__item:nth-child(2) {
@@ -297,7 +271,6 @@
 .pricing-item__quote {
   background-image: url(/img/card_price_bg.png);
   color: rgba(161, 161, 161, 0.5);
-  height: 51px;
   text-align: center;
   line-height: 51px;
   font-style: italic;
@@ -315,7 +288,6 @@
   font-family: 'Open Sans';
   font-size: 14px;
   font-weight: 700;
-  height: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
@@ -324,7 +296,6 @@
 }
 
 .pricing-item__fact {
-  height: 40px;
   margin-bottom: 1px;
   background-color: white;
   color: #86878b;
@@ -339,11 +310,11 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 1050px;
+  max-width: 1050px;
+  margin-bottom: 101px;
 }
 .feedback-item {
   width: 273px;
-  margin-bottom: 101px;
 }
 .feedback-item__text {
   background-color: rgb(236, 236, 236);
@@ -360,9 +331,6 @@
   letter-spacing: normal;
   line-height: normal;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 .triangle {
   opacity: 0.8;
@@ -390,9 +358,6 @@
   letter-spacing: normal;
   line-height: normal;
   text-align: left;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 .feedback-item__usertitle {
@@ -401,9 +366,6 @@
   font-family: 'Open Sans' sans-serif;
   font-size: 14px;
   font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
