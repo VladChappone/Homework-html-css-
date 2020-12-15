@@ -1,18 +1,263 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #000000;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 15px;
+}
+
+.header__nav {
+  margin-left: 15px;
+  width: 500px;
+}
+.header__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links__link {
+  text-decoration: none;
+  opacity: 0.7;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-links__link:hover {
+  color: white;
+  opacity: 1;
+}
+
+section:first-of-type {
+  margin-top: 81px;
+}
+
+.fullscreen {
+  display: flex;
+  width: 100%;
+  background-image: url(/img/image@1X.png);
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 81px); /*Regards to Stas :D */
+}
+.containerforfullscreen {
+  max-width: 1170px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fullscreen-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  /* flex: 1 1 auto; */
+
+  /* padding-top: 110px; */
+}
+
+.fullscreen__intro {
+  max-width: 516px;
+  margin-right: 10px;
+}
+
+.fullscreen-logo {
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-size: 62px;
+  font-weight: 900;
+  text-transform: uppercase;
+  max-width: 516px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+
+.fullscreen-logo__secondpart {
+  color: #ff8b38;
+  font-weight: 100;
+  font-family: 'Raleway';
+}
+
+.fullscreen__title {
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 516px;
+  line-height: 40px;
+}
+
+.fullscreen__title::after {
+  display: block;
+  content: '';
+  width: 74px;
+  border-bottom: 2px solid white;
+  margin-top: 36px;
+  margin-bottom: 30px;
+}
+
+.fullscreen_text {
+  opacity: 0.7;
+  color: #ffffff;
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  /* margin-bottom: 44px; */
+}
+
+.trial-form {
+  margin-left: 10px;
+  /* background-color: #fff; */
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* border-radius: 5px; */
+}
+.trial-form__header {
+  text-align: center;
+}
+
+.trial-form__header-text {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  /* max-width: 360px; */
+  background-color: #eeeeee;
+  color: #333333;
+  font-family: 'Open Sans' sans-serif;
+
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+.trial-form__FREE {
+  color: #ff8b38;
+}
+
+/* .trial-form__btn {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #ff8b38;
+  text-align: center;
+} */
+
+.get-started-btn {
+  width: 360px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #ff8b38;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px;
+  color: #fff;
+  background-color: #ff8b38;
+  border: none;
+  outline: none;
+}
+
+.get-started-btn:hover {
+  background-color: #ff9c56;
+  cursor: pointer;
+}
+
+.get-started-btn:active {
+  font-size: 18px;
+}
+.trial-form__input {
+  background-color: #fff;
+}
+
+.user-input {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: #fff;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 36px;
+  width: 285px;
+  padding-left: 15px;
+  outline: none;
+}
+
+.trial-form__password {
+  margin-bottom: 50px;
+}
+
+/* input[type='text'],
+input[type='password'],
+input[type='email'],
+textarea,
+select {
+  border: none;
+  background-color: #fff;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 36px;
+  transition: all 0.2s ease;
+  width: 285px;
+  padding-left: 15px;
+  outline: none;
+} */
+
+input::placeholder {
+  opacity: 0.6;
+  font-size: 14px;
+}
+textarea::placeholder {
+  opacity: 0.6;
+  font-size: 14px;
+}
 .awesome {
   width: 100%;
 }
 
 .container {
   margin: auto;
-  max-width: 1400px;
+  max-width: 1170px;
+  padding: 0 15px;
 }
-
+/* 
 .container-pricing {
   max-width: 1400px;
   margin: auto;
-}
-
-/* .container-feedback {
 } */
 
 .general-title {
@@ -53,14 +298,14 @@
 .awesome-cards {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-bottom: 143px;
+  flex-wrap: wrap;
+  margin: 0 -15px 143px;
 }
 
 .awesome-item {
   width: 350px;
-  margin-right: 16px;
-  margin-left: 16px;
+
+  margin: 0 15px 15px;
 }
 
 .awesome-round-border {
@@ -150,27 +395,27 @@
   text-align: center;
 }
 
-.stylish__btn {
+.download__btn {
   text-align: center;
   margin-top: 33px;
   height: 42px;
   padding-bottom: 63px;
 }
 
-.stylish-btn__download {
+.download-btn__download {
   border: 2px solid white;
   width: 135px;
   line-height: 42px;
   background: none;
   color: #ffffff;
   font-size: 15px;
-  font-weight: 400;
-  font-family: 'Open Sans';
-  transition: all 0.25s ease-in-out;
+  font-weight: 600;
+  font-family: 'OpenSans-Semibold';
+  transition: all 0.5s ease-in-out;
   outline: none;
 }
 
-.stylish-btn__download:hover {
+.download-btn__download:hover {
   font-size: 30px;
   font-family: 'Yeon Sung', cursive;
   border-radius: 25px;
@@ -181,16 +426,19 @@
   cursor: pointer;
 }
 
+.fullscreen__btn {
+  margin-top: 44px;
+  text-align: left;
+}
 .footer {
-  border-top: grey solid thin;
   width: 100%;
   background-color: rgb(0, 0, 0);
 }
 
 .socials {
   margin: auto;
-  margin-top: 15px;
   width: 317px;
+  padding-top: 38px;
 }
 
 .socials-list {
@@ -215,7 +463,6 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-  text-align: left;
 }
 
 .pricing {
@@ -227,19 +474,21 @@
 .pricing-cards {
   display: flex;
   justify-content: center;
-  max-width: 1400px;
-  margin: auto;
+  flex-wrap: wrap;
+  margin: 0 -20px;
   padding-bottom: 96px;
 }
 
 .pricing-cards__item {
   width: 343px;
-  margin: 39px 20px 0;
+  margin: 39px 20px 39px;
 }
 
 .pricing-cards__item:nth-child(2) {
   margin-top: 0;
+  margin-bottom: 0;
 }
+
 .pricing-item__title {
   background-image: url(/img/card_price_bg.png);
   color: #ffffff;
@@ -312,12 +561,15 @@
 
 .feedback-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: auto;
-  max-width: 1050px;
-  margin-bottom: 101px;
+  flex-wrap: wrap;
+  margin: 0 -60px 101px;
+  /* max-width: 1050px; */
+  /* margin-bottom: 101px; */
 }
 .feedback-item {
+  margin: 0 60px 25px;
   width: 273px;
 }
 .feedback-item__text {
@@ -387,8 +639,7 @@
 .social-media-intro {
   width: 350px;
   text-align: left;
-  margin: 22px 87px;
-  margin-left: 125px;
+  margin-top: 22px;
 }
 .social-media-title {
   color: #333333;
@@ -408,7 +659,6 @@
 .social-media-links {
   width: 634px;
   margin: 29px 0;
-  margin-right: 185px;
 }
 
 .social-media__list {
@@ -419,13 +669,11 @@
 .social-media-links__item {
   color: #cccccc;
   font-family: 'Font Awesome';
-  font-size: 48px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-  text-align: left;
-  transition: 0.25s;
+  transition: all 0.5s ease-in;
 }
 
 .social-links:hover {
@@ -435,4 +683,59 @@
 
 .social-links:active {
   color: #cccccc;
+}
+
+.social-links__item {
+  font-size: 48px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -40px 45px;
+}
+.customer-input {
+  flex-direction: column;
+  display: flex;
+  margin: 0 40px 0;
+}
+
+.contact-btn {
+  text-align: center;
+  margin-bottom: 95px;
+}
+.contact-btn__message {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  outline: none;
+  border: none;
+  background-color: #ff8b38;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 15px 22px;
+  transition: transform 0.25s ease;
+}
+
+.contact-btn__message:hover {
+  background-color: #ff9c56;
+  cursor: pointer;
+}
+
+.contact-btn__message:active {
+  transform: scale(0.97);
+}
+.contact-input {
+  width: 527px;
+
+  margin-bottom: 42px;
+}
+
+.message-input {
+  resize: none;
+}
+
+.message {
+  margin: 0 40px 0;
 }
