@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/style.css" />
-    <title>My very first landing</title>
+    <title>My very first landing page</title>
   </head>
   <body>
   <header class="header">
@@ -55,15 +55,15 @@
           <div class="trial-form__header">
             <h3 class="trial-form__header-text">Try Your <span class="trial-form__FREE">FREE</span> Trial Today</h3>
           </div>
-          <form action="#" method="POST" class="trial-form__input">
-          
+          <form action="#" method="POST" >
+          <div class="trial-form__input">
             <input class="user-input" type="text" id="name" placeholder="Name" name="customer_name">
             <input class="user-input" type="email" id="email" placeholder="Email" name="customer_email">
             <input class="user-input trial-form__password" type="password" id="password" placeholder="Password" name="customer_password">
-            
-          
+            <button type="submit" class="get-started-btn">Get Started</button>
+          </div>
           </form>
-          <button type="submit" value="Submit" class="get-started-btn">Get Started</button>
+          
           <!-- <div class="trial-form__btn">
             
           </div> -->
@@ -159,7 +159,7 @@
       </div>
     </section>
     <section class="pricing">
-      <div class="containter container-pricing">
+      <div class="container container-pricing">
         <h2 class="general-title">PRICING OPTIONS</h2>
         <div class="general-subtitle">
           <p class="general-subtitle-text">
@@ -292,8 +292,8 @@
           </div>
         </div>
         <div class="download__btn">
-          <button type="button" class="download-btn__download">Download</button>
-        </div>
+        <button type="button" class="download-btn__download">Download</button>
+      </div>
       </div>
     </section>
     <section class="contact">
@@ -304,22 +304,21 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
-        
-          <form action="#" method="POST" class="contact-form">
+          <form action="#" method="POST" >
+            <div class="contact-form">
             <div class="customer-input">
               <input type="text" id="contact_name" name="user_name" placeholder="Name" class="user-input contact-input">
               <input type="email" id="contact_email" name="user_email" placeholder="Email" class="user-input contact-input">
               <input type="text" id="contact_subject" name="user_subject" placeholder="Subject" class="user-input contact-input">
             </div>
             <div class="message">
-              <textarea name="contact_message" id="message" class="user-input  contact-input message-input" cols="30" rows="10" placeholder="Message"></textarea>
+              <textarea name="contact_message" id="message" class="user-input message-input " cols="30" rows="10" placeholder="Message"></textarea>
             </div>
+          <div class="contact-btn">
+            <button class="contact-btn__message" type="submit">Send Message</button>
+          </div>
+        </div>
           </form>
-          
-        
-        <div class="contact-btn">
-        <button class="contact-btn__message" type="submit">Send Message</button>
-      </div>
       </div>
     </section>
     <footer class="footer">
