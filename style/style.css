@@ -104,9 +104,9 @@ section:first-of-type {
 
 .fullscreen__title {
   color: #ffffff;
-  font-family: 'Raleway';
   font-size: 36px;
   font-weight: 400;
+  font-family: 'Raleway';
   text-transform: uppercase;
   max-width: 516px;
   line-height: 40px;
@@ -636,9 +636,9 @@ textarea::placeholder {
 }
 .social-media-title {
   color: #333333;
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
@@ -718,14 +718,12 @@ textarea::placeholder {
   width: 100%;
 }
 
-.contact-btn {
-  margin: 60px auto 43px;
-}
 .contact-btn__message {
+  margin: 60px auto 43px;
   font-family: 'Open Sans', sans-serif;
-  margin: auto;
   outline: none;
   border: none;
+
   background-color: #ff8b38;
   color: white;
   font-weight: 600;
@@ -739,18 +737,168 @@ textarea::placeholder {
   cursor: pointer;
 }
 
+.tabs-btn:hover {
+  background-color: #ff9c56;
+  cursor: pointer;
+}
+.tabs-btn:active {
+  transform: scale(0.97);
+}
 .contact-btn__message:active {
   transform: scale(0.97);
 }
 
-@media (max-width: 1200px) {
-  .contact-form {
+.tabs {
+  margin-top: 2px;
+  width: 100%;
+
+  background-image: url(/img/Pricing_Panel.png);
+}
+.tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 148px 0 114px;
+  text-align: justify;
+}
+.tabs-tabs {
+  margin-right: 28px;
+}
+.tabs-tabs__item {
+  width: 112px;
+  color: #fff;
+  background-color: #333333;
+  padding: 50px 35px 50px 36px;
+}
+
+.tabs-tabs__item:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1.5px solid #989a9e;
+}
+
+.tabs-tabs__item:nth-child(2) {
+  border-bottom: 1.5px solid #989a9e;
+}
+
+.tabs-tabs__item:nth-child(3) {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tabs-tabs__item-name {
+  font-size: 14px;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tabs-tabs__item:hover {
+  background-color: #ff8b38;
+
+  cursor: pointer;
+}
+
+.tabs-tabs__item:active {
+  font-size: 6px;
+  background-color: #ff9c56;
+}
+
+.tabs-info {
+  width: 476px;
+  margin: 0 103px 0 99px;
+}
+.tabs-info__title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+.tabs-info__text {
+  margin: 52px 0 51px;
+  color: #86878b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.tabs-btn {
+  width: 121px;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  border: none;
+
+  background-color: #ff8b38;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 15px 22px;
+  transition: transform 0.15s ease;
+}
+.tabs-pic {
+  padding-top: 27px;
+}
+
+@media (max-width: 900px) {
+  .tabs-pic {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .tabs-wrapper {
     flex-direction: column;
     align-items: center;
+    padding: 70px 0 70px;
+  }
+  .tabs-tabs {
+    display: flex;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .tabs-info__title {
+    text-align: center;
+  }
+  .tabs-tabs__item:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border: none;
+    border-right: 1.5px solid #989a9e;
+  }
+  .tabs-tabs__item:nth-child(3) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border-bottom-left-radius: 0;
+  }
+  .tabs-tabs__item:nth-child(2) {
+    border: none;
+    border-right: 1.5px solid #989a9e;
+    border-bottom-left-radius: 0;
+  }
+  .tabs-info__text {
+    margin: 20px 15px 51px;
+  }
+  .tabs-btn {
+    width: 100%;
+  }
+  .download-btn__download {
+    width: 80%;
+  }
+  .contact-btn {
+    width: 100%;
+  }
+  .contact-btn__message {
+    width: 100%;
   }
 }
 
 @media (max-width: 1050px) {
+  .tabs-pic {
+    display: none;
+  }
+
   .fullscreen-logo {
     font-size: 52px;
   }
@@ -783,6 +931,9 @@ textarea::placeholder {
   }
   .fullscreen-wrapper::-webkit-scrollbar {
     display: none;
+  }
+  .trial-form__input {
+    margin-bottom: 5px;
   }
   .social-links__item {
     font-size: calc(18px + (48 - 18) * ((100vw - 320px) / (1140 - 320)));
@@ -843,5 +994,9 @@ textarea::placeholder {
   }
   .message {
     width: calc(280px + (570 - 280) * ((100vw - 320px) / (1140 - 320)));
+  }
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
   }
 }
